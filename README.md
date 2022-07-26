@@ -1,18 +1,20 @@
-# simple-calculator
-A simple calculator that performs basic arithmetic
+# Simple Calculator
+This is a calculator implemented in React JS
 
-## stack
-react.js
+### Stack
+React JS
+Next JS
 
-## scripts
-`npm start`
+### Execution
+1. clone git repo
+2. navigate to root folder
+3. in the cli, run `npm run dev`
 
-## implementation
-Button.js - an polymorphic component used for all buttons.
-App.js - a stateful component where the calculator is rendered.
-       - contains a single event listener for the buttons it renders.
-          - the event listener calls another function that performs actual calculation.
+### Design features
+- State was stored in the topmost component. State trickled down to its child components and events were bubbled up to the parent component to implement one way data flow. This is because the `App` component was the first parent with elements that relied on a single state.
+- User Input was stored in three stateful values, `firstInput`, `operand` and `lastInput` selected by some fancy programming sorcery (I'm kidding. I did null checks and set them to null after every operation)
 
-# notes
-impure functions were used to reduce on code complexity.
-😊
+### Screenshots
+<a href="https://drive.google.com/uc?export=view&id=1v470giykOit_g8x5oCmn6G5XCnxl_deO">
+<img src="https://drive.google.com/uc?export=view&id=1v470giykOit_g8x5oCmn6G5XCnxl_deO" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+</a>
